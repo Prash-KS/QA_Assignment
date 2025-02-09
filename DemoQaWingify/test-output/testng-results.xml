@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="11" failed="9" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-02-09T17:47:26 IST" name="Suite" finished-at="2025-02-09T17:47:55 IST" duration-ms="29153">
+    <groups>
+    </groups>
+    <test started-at="2025-02-09T17:47:26 IST" name="Test" finished-at="2025-02-09T17:47:55 IST" duration-ms="29153">
+      <class name="testCases.TC_LF_008_014">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:33 IST" name="setup" finished-at="2025-02-09T17:47:34 IST" duration-ms="1789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:34 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:34 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login_with_remember_me(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:34 IST" name="verify_login_with_remember_me" data-provider="LoginData" finished-at="2025-02-09T17:47:35 IST" duration-ms="637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[correct_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_with_remember_me -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:35 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:35 IST" duration-ms="73" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login_with_remember_me(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:35 IST" name="verify_login_with_remember_me" data-provider="LoginData" finished-at="2025-02-09T17:47:36 IST" duration-ms="592" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrect_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[54321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login passed for invalid credentials with Remember Me expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login passed for invalid credentials with Remember Me expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at testCases.TC_LF_008_014.verify_login_with_remember_me(TC_LF_008_014.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_with_remember_me -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:36 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:36 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login_with_remember_me(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:36 IST" name="verify_login_with_remember_me" data-provider="LoginData" finished-at="2025-02-09T17:47:36 IST" duration-ms="415" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[correct_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[54321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login passed for invalid credentials with Remember Me expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login passed for invalid credentials with Remember Me expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at testCases.TC_LF_008_014.verify_login_with_remember_me(TC_LF_008_014.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_with_remember_me -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:36 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:36 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login_with_remember_me(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:36 IST" name="verify_login_with_remember_me" data-provider="LoginData" finished-at="2025-02-09T17:47:37 IST" duration-ms="422" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrect_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login passed for invalid credentials with Remember Me expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login passed for invalid credentials with Remember Me expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at testCases.TC_LF_008_014.verify_login_with_remember_me(TC_LF_008_014.java:26)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_with_remember_me -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:37 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:37 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login_with_remember_me(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:37 IST" name="verify_login_with_remember_me" data-provider="LoginData" finished-at="2025-02-09T17:47:37 IST" duration-ms="218" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_with_remember_me -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:37 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:37 IST" duration-ms="35" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login_with_remember_me(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:37 IST" name="verify_login_with_remember_me" data-provider="LoginData" finished-at="2025-02-09T17:47:38 IST" duration-ms="224" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_with_remember_me -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:38 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:38 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login_with_remember_me(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:38 IST" name="verify_login_with_remember_me" data-provider="LoginData" finished-at="2025-02-09T17:47:38 IST" duration-ms="246" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[correct_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login_with_remember_me -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_LF_008_014@3d285d7e]" started-at="2025-02-09T17:47:38 IST" name="tearDown" finished-at="2025-02-09T17:47:38 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_LF_008_014 -->
+      <class name="testCases.TC_LF_015">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_LF_015@40005471]" started-at="2025-02-09T17:47:38 IST" name="setup" finished-at="2025-02-09T17:47:40 IST" duration-ms="1878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_015@40005471]" started-at="2025-02-09T17:47:40 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:40 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_twitter_login()[pri:0, instance:testCases.TC_LF_015@40005471]" started-at="2025-02-09T17:47:40 IST" name="verify_twitter_login" finished-at="2025-02-09T17:47:40 IST" duration-ms="109" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Twitter login does not open twitter login URL expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Twitter login does not open twitter login URL expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testCases.TC_LF_015.verify_twitter_login(TC_LF_015.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_twitter_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_LF_015@40005471]" started-at="2025-02-09T17:47:40 IST" name="tearDown" finished-at="2025-02-09T17:47:40 IST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_LF_015 -->
+      <class name="testCases.TC_LF_016">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_LF_016@2cd76f31]" started-at="2025-02-09T17:47:40 IST" name="setup" finished-at="2025-02-09T17:47:42 IST" duration-ms="1936" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_016@2cd76f31]" started-at="2025-02-09T17:47:42 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:42 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_twitter_login()[pri:0, instance:testCases.TC_LF_016@2cd76f31]" started-at="2025-02-09T17:47:42 IST" name="verify_twitter_login" finished-at="2025-02-09T17:47:42 IST" duration-ms="177" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Facebook login does not open facebook login URL expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Facebook login does not open facebook login URL expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testCases.TC_LF_016.verify_twitter_login(TC_LF_016.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_twitter_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_LF_016@2cd76f31]" started-at="2025-02-09T17:47:43 IST" name="tearDown" finished-at="2025-02-09T17:47:43 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_LF_016 -->
+      <class name="testCases.TC_HP_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_HP_001@49438269]" started-at="2025-02-09T17:47:45 IST" name="setup" finished-at="2025-02-09T17:47:47 IST" duration-ms="1862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_HP_001@49438269]" started-at="2025-02-09T17:47:47 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:47 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verifyAscendingSort()[pri:0, instance:testCases.TC_HP_001@49438269]" started-at="2025-02-09T17:47:47 IST" name="verifyAscendingSort" finished-at="2025-02-09T17:47:48 IST" duration-ms="713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAscendingSort -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_HP_001@49438269]" started-at="2025-02-09T17:47:48 IST" name="tearDown" finished-at="2025-02-09T17:47:48 IST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_HP_001 -->
+      <class name="testCases.TC_HP_002">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_HP_002@ba2f4ec]" started-at="2025-02-09T17:47:48 IST" name="setup" finished-at="2025-02-09T17:47:50 IST" duration-ms="2337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_HP_002@ba2f4ec]" started-at="2025-02-09T17:47:50 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:50 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verifyDescendingSort()[pri:0, instance:testCases.TC_HP_002@ba2f4ec]" started-at="2025-02-09T17:47:51 IST" name="verifyDescendingSort" finished-at="2025-02-09T17:47:51 IST" duration-ms="713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDescendingSort -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_HP_002@ba2f4ec]" started-at="2025-02-09T17:47:51 IST" name="tearDown" finished-at="2025-02-09T17:47:51 IST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_HP_002 -->
+      <class name="testCases.TC_HP_003">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_HP_003@1c1bbc4e]" started-at="2025-02-09T17:47:51 IST" name="setup" finished-at="2025-02-09T17:47:53 IST" duration-ms="1844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_HP_003@1c1bbc4e]" started-at="2025-02-09T17:47:53 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:53 IST" duration-ms="59" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verifyRowsRemainIntactAfterSorting()[pri:0, instance:testCases.TC_HP_003@1c1bbc4e]" started-at="2025-02-09T17:47:53 IST" name="verifyRowsRemainIntactAfterSorting" finished-at="2025-02-09T17:47:55 IST" duration-ms="1287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRowsRemainIntactAfterSorting -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_HP_003@1c1bbc4e]" started-at="2025-02-09T17:47:55 IST" name="tearDown" finished-at="2025-02-09T17:47:55 IST" duration-ms="183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_HP_003 -->
+      <class name="testCases.TC_LF_001_007">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:26 IST" name="setup" finished-at="2025-02-09T17:47:29 IST" duration-ms="2529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:29 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:29 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:29 IST" name="verify_login" data-provider="LoginData" finished-at="2025-02-09T17:47:30 IST" duration-ms="581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[correct_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[valid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:30 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:30 IST" duration-ms="90" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:30 IST" name="verify_login" data-provider="LoginData" finished-at="2025-02-09T17:47:30 IST" duration-ms="441" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrect_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[54321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login passed for invalid credentials. Username: incorrect_username expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login passed for invalid credentials. Username: incorrect_username expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at testCases.TC_LF_001_007.verify_login(TC_LF_001_007.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:30 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:30 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:30 IST" name="verify_login" data-provider="LoginData" finished-at="2025-02-09T17:47:31 IST" duration-ms="365" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[correct_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[54321]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login passed for invalid credentials. Username: correct_username expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login passed for invalid credentials. Username: correct_username expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at testCases.TC_LF_001_007.verify_login(TC_LF_001_007.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:31 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:31 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:31 IST" name="verify_login" data-provider="LoginData" finished-at="2025-02-09T17:47:31 IST" duration-ms="405" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[incorrect_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login passed for invalid credentials. Username: incorrect_username expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login passed for invalid credentials. Username: incorrect_username expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at testCases.TC_LF_001_007.verify_login(TC_LF_001_007.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:31 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:32 IST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:32 IST" name="verify_login" data-provider="LoginData" finished-at="2025-02-09T17:47:32 IST" duration-ms="166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:32 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:32 IST" duration-ms="56" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:32 IST" name="verify_login" data-provider="LoginData" finished-at="2025-02-09T17:47:32 IST" duration-ms="190" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:32 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:32 IST" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:32 IST" name="verify_login" data-provider="LoginData" finished-at="2025-02-09T17:47:32 IST" duration-ms="267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[correct_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_LF_001_007@4d1c00d0]" started-at="2025-02-09T17:47:32 IST" name="tearDown" finished-at="2025-02-09T17:47:33 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_LF_001_007 -->
+      <class name="testCases.TC_LF_017">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC_LF_017@367ffa75]" started-at="2025-02-09T17:47:43 IST" name="setup" finished-at="2025-02-09T17:47:45 IST" duration-ms="1972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="resetBrowserState()[pri:0, instance:testCases.TC_LF_017@367ffa75]" started-at="2025-02-09T17:47:45 IST" name="resetBrowserState" finished-at="2025-02-09T17:47:45 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- resetBrowserState -->
+        <test-method signature="verify_twitter_login()[pri:0, instance:testCases.TC_LF_017@367ffa75]" started-at="2025-02-09T17:47:45 IST" name="verify_twitter_login" finished-at="2025-02-09T17:47:45 IST" duration-ms="113" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Linkedin login does not open linkedin login URL expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Linkedin login does not open linkedin login URL expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at testCases.TC_LF_017.verify_twitter_login(TC_LF_017.java:19)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_twitter_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_LF_017@367ffa75]" started-at="2025-02-09T17:47:45 IST" name="tearDown" finished-at="2025-02-09T17:47:45 IST" duration-ms="187" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_LF_017 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
